@@ -38,6 +38,8 @@ public class VulcanText implements AlienCellPhone
             
             Scanner in = new Scanner(file);
             
+            System.out.print("Vulcan ");
+            
             while(in.hasNext())
             {
                 String input = in.nextLine();

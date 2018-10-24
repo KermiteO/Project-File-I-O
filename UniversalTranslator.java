@@ -67,11 +67,7 @@ public class UniversalTranslator implements EarthCellPhone
             {
                 alien.translateText(fileName);
                 alien.alienReadText(fileName);
-            }
-
-            
-            
-           
+            }      
         }catch(IOException e)
         {
            System.out.println("File: " + fileName + " does not exist");
