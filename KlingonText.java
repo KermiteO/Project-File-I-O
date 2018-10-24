@@ -36,7 +36,7 @@ public class KlingonText implements AlienCellPhone
             
             Scanner in = new Scanner(file);
             
-            System.out.print("Klingon s");
+            System.out.print("Klingon ");
             while(in.hasNext())
             {
                 String input = in.nextLine();
