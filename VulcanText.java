@@ -36,16 +36,13 @@ public class VulcanText implements AlienCellPhone
         {
             File file = new File(fileName);
             
-            BufferedReader br = new BufferedReader(new FileReader(file)); 
-  
-            String st; 
+            Scanner in = new Scanner(file);
             
-            while ((st = br.readLine()) != null) 
+            while(in.hasNext())
             {
-                System.out.println(st); 
+                String input = in.nextLine();
+                System.out.println(input);
             }
-            
-            throw new IOException("File: " + fileName + " does not exist");
 
         }catch(IOException e)
         {
@@ -85,6 +82,11 @@ public class VulcanText implements AlienCellPhone
                 else if(splited[i].equals("text."))
                     text += "ae";            
             }
+            
+            PrintWriter writer = new PrintWriter(fileName);
+            writer.print("");
+            writer.print(text);
+            writer.close();
             
         }catch(IOException e)
         {

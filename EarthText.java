@@ -40,9 +40,7 @@ public class EarthText implements EarthCellPhone
                     fw.write("This is earth to Klingon text.");    
                 else if(languageType.equals("Vulcan"))
                     fw.write("This is earth to Vulcan text.");
-                else
-                {
-                }
+                
 
                 fw.close();
 

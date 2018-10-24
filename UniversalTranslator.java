@@ -14,6 +14,8 @@ public class UniversalTranslator implements EarthCellPhone
 {
    private AlienCellPhone alien;
    
+   public UniversalTranslator() {}
+   
    public UniversalTranslator(AlienCellPhone m)
    {
        alien = m;
@@ -63,11 +65,12 @@ public class UniversalTranslator implements EarthCellPhone
                 System.out.println(stringBuffer);
             else
             {
-                System.out.println(alien.translateText(fileName));
+                alien.translateText(fileName);
+                alien.alienReadText(fileName);
             }
 
             
-            alien.translateText(fileName);
+            
            
         }catch(IOException e)
         {

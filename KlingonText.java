@@ -34,16 +34,13 @@ public class KlingonText implements AlienCellPhone
         {
             File file = new File(fileName);
             
-            BufferedReader br = new BufferedReader(new FileReader(file)); 
-  
-            String st; 
+            Scanner in = new Scanner(file);
             
-            while ((st = br.readLine()) != null) 
+            while(in.hasNext())
             {
-              System.out.println(st); 
+                String input = in.nextLine();
+                System.out.println(input);
             }
-            
-            throw new IOException("File: " + fileName + " does not exist");
 
         }catch(IOException e)
         {
@@ -77,6 +74,13 @@ public class KlingonText implements AlienCellPhone
             }
             
             text = new String(charArr);
+            
+            FileWriter writer = new FileWriter(fileName);
+            
+            writer.write(text);
+            
+            writer.close();
+            
             
         }catch(IOException e)
         {
