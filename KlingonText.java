@@ -1,20 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package lab4;
+
 import java.io.*;
 import java.util.*;
 /**
  *
  * @author Omar and Luke
- *output: messages translated into alien languages from earth language
- *purpose: translate earth text messages into alien languages and sent them to alien cellphones
+ * output: messages translated into alien languages from earth language
+ * purpose: translate earth text messages into alien languages and sent them to alien cellphones
  */
 public class KlingonText implements AlienCellPhone
 {
-    public void alienSendText(String fileName)
+    public void alienSendText(String fileName) //sends text from Klingon phone
     {
         try 
         {
@@ -30,7 +25,7 @@ public class KlingonText implements AlienCellPhone
         }
     }
     
-    public void alienReadText(String fileName)
+    public void alienReadText(String fileName) //reads text message received on Klingon phone
     {
         try
         {
@@ -51,7 +46,7 @@ public class KlingonText implements AlienCellPhone
         }
     }
     
-    public String translateText(String fileName)
+    public String translateText(String fileName) //translates text to Klingon
     {
         String text = "";
         try
