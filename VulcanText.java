@@ -16,7 +16,7 @@ import java.util.Scanner;
  */
 public class VulcanText implements AlienCellPhone
 {
-    public void alienSendText(String fileName)
+    public void alienSendText(String fileName) //sends vulcan text
     {
         try 
         {
@@ -32,7 +32,7 @@ public class VulcanText implements AlienCellPhone
         }
     }
     
-    public void alienReadText(String fileName)
+    public void alienReadText(String fileName) //reads vulcan text
     {
         try
         {
@@ -54,7 +54,7 @@ public class VulcanText implements AlienCellPhone
         }
     }
     
-    public String translateText(String fileName)
+    public String translateText(String fileName) //translates text to vulcan
     {
         String text = "";
         
