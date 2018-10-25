@@ -1,17 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package lab4;
 import java.io.*;
 /**
  *
- * @author kermi
+ * @author Omar and Luke
+ * output: messages translated into alien languages from earth language
+ * purpose: translate earth text messages into alien languages and sent them to alien cellphones
  */
 public class EarthText implements EarthCellPhone
 {
-    public void sendMessage(String languageType, String fileName) throws InvalidLanguageException          
+    public void sendMessage(String languageType, String fileName) throws InvalidLanguageException //sends text from an earth phone         
     {         
        try
        {
@@ -54,7 +52,7 @@ public class EarthText implements EarthCellPhone
        
     }
     
-    public void readMessage(String fileName)
+    public void readMessage(String fileName) //reads text on earth phone
     {
         try
         {
