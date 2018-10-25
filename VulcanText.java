@@ -6,12 +6,12 @@ import java.util.Scanner;
 /**
  *
  * @author Omar and Luke
- *output: messages translated into alien languages from earth language
- *purpose: translate earth text messages into alien languages and sent them to alien cellphones
+ * output: messages translated into alien languages from earth language
+ * purpose: translate earth text messages into alien languages and sent them to alien cellphones
  */
 public class VulcanText implements AlienCellPhone
 {
-    public void alienSendText(String fileName) //sends vulcan text
+    public void alienSendText(String fileName) //sends text from vulcaon phone
     {
         try 
         {
