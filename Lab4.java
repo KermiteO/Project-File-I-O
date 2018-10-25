@@ -3,19 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package lab4;
 
 /**
  *
- * @author kermi
+ * @author Omar and Luke
+ *output: messages translated into alien languages from earth language
+ *purpose: translate earth text messages into alien languages and sent them to alien cellphones
  */
 public class Lab4 {
 
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
-        // TODO code application logic here
         //Create two earth cell phones
       EarthText et = new EarthText();
       EarthText et2 = new EarthText();
